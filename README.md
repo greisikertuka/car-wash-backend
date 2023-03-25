@@ -1,3 +1,18 @@
+# Test update method on Car Endpoint
+
+{
+"id": 1,
+"model": "Toyota Yaris",
+"year": 2012,
+"owner": {
+"id": 1,
+"firstName": "string",
+"lastName": "string",
+"phoneNumber": "string",
+"age": 0,
+"cars": []
+} }
+
 # car-wash-backend
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
