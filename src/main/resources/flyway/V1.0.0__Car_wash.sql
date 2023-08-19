@@ -14,3 +14,9 @@ create table CARS
     OWNER_ID      int          not null,
     constraint FK_OWNERS foreign key (OWNER_ID) references OWNERS (ID)
 );
+CREATE TABLE users
+(
+    id       serial primary key,
+    username varchar(255) not null unique,
+    password varchar(255) not null
+);

@@ -32,6 +32,9 @@ public class CarService {
     @Transactional
     public void insertCar(Long id, Car car) {
         var owner = ownerRepository.findById(id);
+        if (owner == null) {
+            throw new NotFoundException();
+        }
         owner.getCars().add(car);
         ownerRepository.getEntityManager().merge(owner);
     }
